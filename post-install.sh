@@ -23,4 +23,16 @@ flatpak install discord nuclear builder Bitwarden Bottles flatseal
 flatpak install flathub io.github.shiftey.Desktop
 flatpak install flathub im.riot.Riot
 
+# Adding Vim Plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# Adding dotfiles 
+git clone https://github.com/ParadoxialN3/rhel-dots
+cd rhel-dots
+cp nvim ~/.config/
+nvim +PlugInstall
+
+echo Reboot Now. 
+
 
