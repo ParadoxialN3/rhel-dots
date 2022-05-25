@@ -1,3 +1,6 @@
+# Paths
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # History in histfile
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -15,7 +18,11 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # My Aliases
 alias vim="nvim"
-
+alias ls="lsd"
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 # ZSH hotkeys
 bindkey '^ ' autosuggest-accept
 
