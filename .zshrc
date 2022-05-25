@@ -1,4 +1,3 @@
-# This is my humble zsh configuration, with my set of plugins and my prompt. Has some creature 
 # History in histfile
 HISTFILE=~/.histfile
 HISTSIZE=1000
