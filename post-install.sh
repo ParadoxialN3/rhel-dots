@@ -35,5 +35,3 @@ cp .zshrc ~
 nvim +PlugInstall
 
 echo Reboot Now. 
-
-
