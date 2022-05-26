@@ -34,4 +34,15 @@ cp nvim ~/.config/
 cp .zshrc ~
 nvim +PlugInstall
 
+# Installing zsh plugins
+cd ~
+mkdir .zsh
+cd .zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions
+cd ~
+echo Change your shell to /bin/zsh when prompted.
+sleep 2
+chsh $USER
+
+
 echo Reboot Now. 
