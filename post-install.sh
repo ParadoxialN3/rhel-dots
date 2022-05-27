@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # This is my post install script for RHEL that adds some of the basic things I need to get up and running. Its only installing a few fonts and some programs.
 
 sudo dnf update
@@ -18,7 +17,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 # Installing Software I need
 sudo dnf install akmod-nvidia zsh neovim vim htop gnome-tweaks gnome-extenstions openh264 -y
-flatpak install discord nuclear builder Bitwarden Bottles flatseal
+flatpak install discord nuclear builder Bitwarden Bottles flatseal firefox
+sudo dnf remove firefox -y
  # Installing some oddball flatpaks that are pains to install without a direct link
 flatpak install flathub io.github.shiftey.Desktop
 flatpak install flathub im.riot.Riot
@@ -34,7 +34,7 @@ cp nvim ~/.config/
 cp .zshrc ~
 nvim +PlugInstall
 
-# Installing zsh plugins
+# Installing zsh autosuggestions
 cd ~
 mkdir .zsh
 cd .zsh
@@ -43,6 +43,5 @@ cd ~
 echo Change your shell to /bin/zsh when prompted.
 sleep 2
 chsh $USER
-
 
 echo Reboot Now. 
