@@ -18,6 +18,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # My Aliases
 alias vim="nvim"
+alias em="emacs"
 alias ls="lsd"
 alias l='ls -l'
 alias la='ls -a'
