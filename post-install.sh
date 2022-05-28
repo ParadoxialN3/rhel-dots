@@ -32,7 +32,6 @@ git clone https://github.com/ParadoxialN3/rhel-dots
 cd rhel-dots
 cp nvim ~/.config/
 cp .zshrc ~
-nvim +PlugInstall
 
 # Installing zsh autosuggestions
 cd ~
@@ -43,5 +42,8 @@ cd ~
 echo Change your shell to /bin/zsh when prompted.
 sleep 2
 chsh $USER
+echo NeoVim will install plugins in a little bit. Exit out with ":qa!" once finished.
+sleep 5
+nvim +PlugInstall
 
 echo Reboot Now. 
