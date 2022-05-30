@@ -1,6 +1,14 @@
-# Paths
-export PATH="$HOME/.cargo/bin:$PATH"
+# Paths and some other stuff
+set $EDITOR='nvim'
+set $TERM='gnome-terminal'
 
+if [ -d "$HOME/.cargo/bin" ] ;   
+	then PATH="$HOME/.cargo/bin:$PATH" 
+fi
+
+if [ -d "/home/linuxbrew/bin" ] ;
+	then PATH="/home/linuxbrew/bin:$PATH"
+fi
 # History in histfile
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -18,7 +26,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # My Aliases
 alias vim="nvim"
-alias em="emacs"
 alias ls="lsd"
 alias l='ls -l'
 alias la='ls -a'
