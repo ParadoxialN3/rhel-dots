@@ -9,6 +9,7 @@ fi
 if [ -d "/home/linuxbrew/bin" ] ;
 	then PATH="/home/linuxbrew/bin:$PATH"
 fi
+
 # History in histfile
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -26,12 +27,18 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # My Aliases
 alias vim="nvim"
-alias ls="lsd"
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+alias vi="nvim"
+alias viminit="nvim $HOME/.config/nvim/init.vim"
+
+## This is assuming you install lsd from source like how I prefer
+if [ PATH="$HOME/.cargo/bin:$PATH" ] ;
+	then 
+	alias ls="lsd"
+	alias la="lsd -a"
+	alias l="lsd -l"
+	alias lla="lsd -la"
+fi
+
 # ZSH hotkeys
 bindkey '^ ' autosuggest-accept
-
 
