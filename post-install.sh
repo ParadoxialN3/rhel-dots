@@ -22,7 +22,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 sudo dnf install akmod-nvidia zsh neovim vim htop gnome-tweaks gnome-extenstions openh264 alacritty -y
 flatpak install discord nuclear builder Bitwarden Bottles flatseal firefox vscodium
 sudo dnf remove firefox -y
- # Installing some oddball flatpaks that are pains to install without a direct link
+### Installing some oddball flatpaks that are pains to install without a direct link
 flatpak install flathub io.github.shiftey.Desktop
 flatpak install flathub im.riot.Riot
 
