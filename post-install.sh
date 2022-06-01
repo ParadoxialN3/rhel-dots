@@ -15,8 +15,11 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 # Adding FlatHub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+# Updating DNF to be a tad faster because this shit is slow as fuck
+
+
 # Installing Software I need
-sudo dnf install akmod-nvidia zsh neovim vim htop gnome-tweaks gnome-extenstions openh264 -y
+sudo dnf install akmod-nvidia zsh neovim vim htop gnome-tweaks gnome-extenstions openh264 alacritty -y
 flatpak install discord nuclear builder Bitwarden Bottles flatseal firefox vscodium
 sudo dnf remove firefox -y
  # Installing some oddball flatpaks that are pains to install without a direct link
