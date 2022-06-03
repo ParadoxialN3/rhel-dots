@@ -33,7 +33,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Adding dotfiles 
 git clone https://github.com/ParadoxialN3/rhel-dots
 cd rhel-dots
-cp nvim ~/.config/
+cp .config/ ~
 cp .zshrc ~
 
 # Installing zsh autosuggestions
